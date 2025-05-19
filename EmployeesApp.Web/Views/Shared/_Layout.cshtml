@@ -13,10 +13,12 @@
         <a asp-controller="Employees" asp-action="@nameof(EmployeesController.Create)">Create Employee</a></h3>
     </div>
     
-
     <div>
         @RenderBody()
     </div>
+
     <footer>&copy; Grupp 4: Niklas Mattsson, Stanislav Hallberg, Elise Rochaix 2025</footer>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+    @RenderSection("scripts", false)
 </body>
 </html>
