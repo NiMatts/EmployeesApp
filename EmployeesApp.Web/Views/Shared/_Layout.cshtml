@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/@@picocss/pico@@latest/css/pico.classless.min.css">
+</head>
+<body style="margin: 50px;">
+    <div>
+        <h1>@ViewBag.Title</h1>
+        <h3><a asp-controller="Employees" asp-action="@nameof(EmployeesController.Index)">List Employees</a>
+        <a asp-controller="Employees" asp-action="@nameof(EmployeesController.Create)">Create Employee</a></h3>
+    </div>
+    
+
+    <div>
+        @RenderBody()
+    </div>
+    <footer>&copy; Grupp 4: Niklas Mattsson, Stanislav Hallberg, Elise Rochaix 2025</footer>
+</body>
+</html>
